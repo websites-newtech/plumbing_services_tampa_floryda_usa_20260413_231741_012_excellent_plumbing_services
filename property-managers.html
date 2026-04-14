@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plumbing services for Tampa property managers — one trusted partner for all your properties. Priority scheduling, consolidated billing, 24/7 emergency response.">
+  <title>Property Managers | Excellent Plumbing Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileOpen: false }">
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Excellent Plumbing Services home">
+        <span class="logo-mark">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#C87941"/>
+            <path d="M10 22V14a6 6 0 0 1 12 0v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M13 22v-5a3 3 0 0 1 6 0v5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Excellent<strong>Plumbing</strong></span>
+      </a>
+      <nav class="navbar__links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="property-managers.html" class="nav-link active" aria-current="page">Property Managers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:+18137349192" class="btn btn--accent btn--sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (813) 734-9192
+        </a>
+      </nav>
+      <button class="navbar__hamburger" @click="mobileOpen = !mobileOpen" :aria-expanded="mobileOpen.toString()" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" :class="{ 'mobile-menu--open': mobileOpen }" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a>
+      <a href="about.html" class="mobile-link" @click="mobileOpen = false">About</a>
+      <a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a>
+      <a href="property-managers.html" class="mobile-link" @click="mobileOpen = false">Property Managers</a>
+      <a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a>
+      <a href="tel:+18137349192" class="mobile-link mobile-link--cta" @click="mobileOpen = false">(813) 734-9192</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--image" aria-label="Property managers header">
+      <div class="page-hero__bg">
+        <img src="assets/images/hero_003.jpg" alt="Property management plumbing services in Tampa" loading="eager" width="1400" height="500">
+        <div class="page-hero__overlay"></div>
+      </div>
+      <div class="container page-hero__inner">
+        <p class="hero__eyebrow">Built for Property Management</p>
+        <h1 class="page-hero__title">The Plumbing Partner Tampa<br>Property Managers Trust</h1>
+        <p class="page-hero__sub">One Call. Multiple Properties. Zero Hassle.</p>
+        <div class="hero__actions" style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn--accent btn--lg">Schedule Consultation</a>
+          <a href="tel:+18137349192" class="btn btn--outline-light btn--lg">Call Now: (813) 734-9192</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Understanding Challenges -->
+    <section class="section pm-challenges" aria-label="Property manager challenges">
+      <div class="container pm-challenges__inner">
+        <div class="pm-challenges__intro" data-animate>
+          <p class="section-eyebrow">We Understand Your Challenges</p>
+          <h2 class="section-title">Managing Plumbing Across Multiple Properties Is Complex</h2>
+          <p class="section-body">As a property manager, you're juggling tenant requests, maintenance budgets, compliance requirements, and owner expectations. Plumbing problems can quickly escalate into tenant complaints, lease violations, and costly emergency repairs if not handled by a reliable partner.</p>
+          <p class="section-body">You need a plumbing partner who understands tenant satisfaction, budget constraints, compliance requirements, and the urgency of keeping units occupied and operational. That's exactly what we deliver — reliable, professional plumbing service designed specifically for property management needs.</p>
+        </div>
+        <div class="pm-challenges__grid">
+          <div class="challenge-card" data-animate>
+            <div class="challenge-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3>Tenant Complaints</h3>
+            <p>Unresolved plumbing issues lead to unhappy tenants, negative reviews, and early lease terminations. We respond fast so your tenants stay happy.</p>
+          </div>
+          <div class="challenge-card" data-animate>
+            <div class="challenge-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Budget Overruns</h3>
+            <p>Emergency repairs without a trusted partner can blow maintenance budgets. Our transparent pricing and preventative programs keep costs predictable.</p>
+          </div>
+          <div class="challenge-card" data-animate>
+            <div class="challenge-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>Compliance Requirements</h3>
+            <p>Backflow testing, grease trap maintenance, and code compliance — we handle documentation and reporting so you're always audit-ready.</p>
+          </div>
+          <div class="challenge-card" data-animate>
+            <div class="challenge-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Multiple Properties</h3>
+            <p>Coordinating different contractors across properties is exhausting. One call to us handles it all — consistent service, consolidated billing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us for PM -->
+    <section class="section section--dark pm-why" aria-label="Why property managers choose us">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-eyebrow section-eyebrow--light">Why Property Managers Choose Us</p>
+          <h2 class="section-title section-title--light">Everything You Need from One Trusted Partner</h2>
+        </div>
+        <div class="pm-benefits-grid">
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Priority Scheduling</h3>
+              <p>Property management clients get priority scheduling. When a tenant calls with a plumbing problem, we're there — fast.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>24/7 Emergency Response</h3>
+              <p>Plumbing emergencies don't keep business hours. We're available around the clock for your tenants and properties.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Consolidated Billing</h3>
+              <p>One invoice for all your properties. Simplified accounting and budget tracking across your entire portfolio.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Transparent Reporting</h3>
+              <p>Detailed service reports for every visit. Know exactly what was done, what was found, and what's recommended.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Compliance Management</h3>
+              <p>We track backflow testing schedules, grease trap cleaning cycles, and other regulatory requirements on your behalf.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Preventative Programs</h3>
+              <p>Scheduled maintenance to catch problems before they become expensive emergencies. Protect your property investment.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Licensed &amp; Insured</h3>
+              <p>Full licensing and insurance coverage protects you, your tenants, and your property on every job.</p>
+            </div>
+          </div>
+          <div class="pm-benefit" data-animate>
+            <div class="pm-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="pm-benefit__content">
+              <h3>Consistent Pricing</h3>
+              <p>No surprise invoices. Upfront estimates and consistent pricing structures make budget planning easy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PM Services -->
+    <section class="section pm-services" aria-label="Property manager services">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-eyebrow">Services for Property Managers</p>
+          <h2 class="section-title">Full-Scope Plumbing for Your Portfolio</h2>
+        </div>
+        <div class="pm-services-grid">
+          <div class="pm-service-item" data-animate>
+            <h3>Routine Maintenance</h3>
+            <p>Scheduled inspections and preventative maintenance to keep all systems running properly and avoid costly breakdowns.</p>
+          </div>
+          <div class="pm-service-item" data-animate>
+            <h3>Emergency Repairs</h3>
+            <p>24/7 emergency response for any plumbing crisis — burst pipes, sewage backups, water heater failures, and more.</p>
+          </div>
+          <div class="pm-service-item" data-animate>
+            <h3>Unit Turnover Plumbing</h3>
+            <p>Complete plumbing inspection and repairs during tenant turnover to ensure every unit is move-in ready.</p>
+          </div>
+          <div class="pm-service-item" data-animate>
+            <h3>Backflow Certification</h3>
+            <p>Annual testing and certification with full documentation submitted on your behalf to maintain compliance.</p>
+          </div>
+          <div class="pm-service-item" data-animate>
+            <h3>Grease Trap Service</h3>
+            <p>Scheduled cleaning and maintenance for commercial kitchen grease traps to stay health code compliant.</p>
+          </div>
+          <div class="pm-service-item" data-animate>
+            <h3>Water Heater Programs</h3>
+            <p>Fleet management for commercial water heaters — maintenance schedules, replacement planning, and emergency response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-label="Call to action">
+      <div class="container cta-banner__inner" data-animate>
+        <div class="cta-banner__text">
+          <h2 class="cta-banner__headline">Let's Build a Partnership.</h2>
+          <p class="cta-banner__sub">Schedule a consultation to discuss your property portfolio needs.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="tel:+18137349192" class="btn btn--accent btn--xl">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Call (813) 734-9192
+          </a>
+          <a href="contact.html" class="btn btn--outline-light btn--xl">Schedule Consultation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" aria-label="Excellent Plumbing Services home">
+          <span class="logo-mark">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="16" fill="#C87941"/>
+              <path d="M10 22V14a6 6 0 0 1 12 0v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M13 22v-5a3 3 0 0 1 6 0v5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Excellent<strong>Plumbing</strong></span>
+        </a>
+        <p class="footer__tagline">Tampa's trusted commercial plumbing partner since 2017.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/excellentplumbingservices/" class="social-link" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/excellentplumbingserv" class="social-link" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Quick Links</h3>
+        <nav aria-label="Footer navigation">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="property-managers.html" class="footer__link">Property Managers</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+          <a href="privacy.html" class="footer__link">Privacy Policy</a>
+        </nav>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__nav-title">Contact</h3>
+        <a href="tel:+18137349192" class="footer__contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (813) 734-9192
+        </a>
+        <a href="mailto:excellent@excellentplumbingservices.com" class="footer__contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          excellent@excellentplumbingservices.com
+        </a>
+        <div class="footer__hours">
+          <p><strong>Mon – Fri:</strong> 8:30 am – 5:00 pm</p>
+          <p><strong>Sat – Sun:</strong> Emergency Services Only</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 Excellent Plumbing Services. All rights reserved. Tampa, FL.</p>
+        <p>Licensed &amp; Insured Commercial Plumbing Contractor</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

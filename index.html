@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Excellent Plumbing Services — Tampa's trusted commercial and residential plumbing contractor. 24/7 emergency service for hotels, restaurants, and property managers.">
+  <meta property="og:title" content="Excellent Plumbing Services | Tampa's Commercial Plumbing Experts">
+  <meta property="og:description" content="24/7 emergency plumbing for Tampa's hotels, restaurants & commercial properties. Licensed, insured, fast response.">
+  <meta property="og:type" content="website">
+  <title>Excellent Plumbing Services | Tampa's Commercial Plumbing Experts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileOpen: false }">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navbar -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Excellent Plumbing Services home">
+        <span class="logo-mark">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#C87941"/>
+            <path d="M10 22V14a6 6 0 0 1 12 0v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M13 22v-5a3 3 0 0 1 6 0v5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Excellent<strong>Plumbing</strong></span>
+      </a>
+
+      <nav class="navbar__links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="property-managers.html" class="nav-link">Property Managers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:+18137349192" class="btn btn--accent btn--sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (813) 734-9192
+        </a>
+      </nav>
+
+      <button
+        class="navbar__hamburger"
+        @click="mobileOpen = !mobileOpen"
+        :aria-expanded="mobileOpen.toString()"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu"
+      :class="{ 'mobile-menu--open': mobileOpen }"
+      role="navigation"
+      aria-label="Mobile navigation"
+    >
+      <a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a>
+      <a href="about.html" class="mobile-link" @click="mobileOpen = false">About</a>
+      <a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a>
+      <a href="property-managers.html" class="mobile-link" @click="mobileOpen = false">Property Managers</a>
+      <a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a>
+      <a href="tel:+18137349192" class="mobile-link mobile-link--cta" @click="mobileOpen = false">(813) 734-9192</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero__bg">
+        <img src="assets/images/hero_001.jpeg" alt="Commercial plumbing work in Tampa" class="hero__img" loading="eager" width="1400" height="800">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Tampa's Commercial Plumbing Experts</p>
+        <h1 class="hero__headline">The Plumber Your&nbsp;Favorite Restaurant Keeps on&nbsp;Speed&nbsp;Dial</h1>
+        <p class="hero__body">When your property needs plumbing service, you can't afford to wait. Excellent Plumbing Services specializes in keeping Tampa's hotels, restaurants, and commercial properties running smoothly — 24 hours a day, 7 days a week.</p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary btn--lg">Get Emergency Service</a>
+          <a href="services.html" class="btn btn--outline btn--lg">View All Services</a>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <span class="badge-pulse"></span>
+        <span class="badge-text">24/7 Emergency Available</span>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar" aria-label="Key facts">
+      <div class="container trust-bar__grid">
+        <div class="trust-item" data-animate>
+          <span class="trust-item__number">24/7</span>
+          <span class="trust-item__label">Emergency Response</span>
+        </div>
+        <div class="trust-item" data-animate>
+          <span class="trust-item__number">&lt;60<small>min</small></span>
+          <span class="trust-item__label">Avg. Response Time</span>
+        </div>
+        <div class="trust-item" data-animate>
+          <span class="trust-item__number">100%</span>
+          <span class="trust-item__label">Customer Satisfaction</span>
+        </div>
+        <div class="trust-item" data-animate>
+          <span class="trust-item__number">2017</span>
+          <span class="trust-item__label">Serving Tampa Bay</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-preview section" aria-label="About us">
+      <div class="container about-preview__grid">
+        <div class="about-preview__image-col">
+          <div class="image-stack">
+            <img src="assets/images/image_003.jpg" alt="Excellent Plumbing Services team at work" class="image-stack__main" loading="lazy" width="600" height="700">
+            <div class="image-stack__accent" aria-hidden="true">
+              <span>Licensed &amp; Insured</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-preview__content" data-animate>
+          <p class="section-eyebrow">About Excellent Plumbing Services</p>
+          <h2 class="section-title">Tampa's Most Trusted Plumbers.</h2>
+          <p class="section-body">Excellent Plumbing Services is Tampa's trusted commercial and residential plumbing contractor. Since 2017, we've built our reputation one emergency response, one grease trap cleaning, and one satisfied customer at a time.</p>
+          <p class="section-body">We specialize in serving hotels, restaurants, property management companies, and commercial properties throughout the Tampa Bay area. Our team of licensed, experienced plumbers is committed to providing fast, professional service with transparent pricing and quality workmanship.</p>
+          <a href="about.html" class="btn btn--primary">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview section section--dark" aria-label="Our services">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-eyebrow section-eyebrow--light">What We Do</p>
+          <h2 class="section-title section-title--light">Complete Commercial Plumbing Solutions</h2>
+          <p class="section-body section-body--light">From routine maintenance to emergency repairs — we keep your business running without disruption.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="service-card__title">Emergency Services 24/7</h3>
+            <p class="service-card__desc">Rapid response to burst pipes, sewer backups, water heater failures. Average response time under 60 minutes.</p>
+            <a href="services.html#emergency" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-card__title">Grease Trap Services</h3>
+            <p class="service-card__desc">Professional cleaning, pumping, and maintenance for restaurant and commercial kitchen grease traps. Health department compliance guaranteed.</p>
+            <a href="services.html#grease" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12m-7 5l7-5 7 5"/><path d="M5 12V7a7 7 0 0 1 14 0v5"/></svg>
+            </div>
+            <h3 class="service-card__title">Drain Cleaning & Hydro-Jetting</h3>
+            <p class="service-card__desc">High-pressure water jetting and professional drain cleaning to clear blockages and prevent backups in commercial drain systems.</p>
+            <a href="services.html#drain" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <h3 class="service-card__title">Water Heater Services</h3>
+            <p class="service-card__desc">Installation, repair, and maintenance of commercial water heaters, boilers, and tankless systems for reliable hot water supply.</p>
+            <a href="services.html#water-heater" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+            </div>
+            <h3 class="service-card__title">Backflow Prevention</h3>
+            <p class="service-card__desc">Annual testing, certification, and installation of backflow prevention devices to maintain local compliance requirements.</p>
+            <a href="services.html#backflow" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="service-card__title">Sewer Line Services</h3>
+            <p class="service-card__desc">Video inspection, repair, and replacement of commercial sewer lines using traditional and trenchless methods for minimal disruption.</p>
+            <a href="services.html#sewer" class="service-card__link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+        </div>
+        <div class="section-cta" data-animate>
+          <a href="services.html" class="btn btn--accent btn--lg">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="who-we-serve section" aria-label="Industries we serve">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <p class="section-eyebrow">Who We Serve</p>
+          <h2 class="section-title">Proudly Serving Tampa and Surrounding Areas</h2>
+        </div>
+        <div class="industries-grid">
+          <div class="industry-card" data-animate>
+            <div class="industry-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <h3>Hotels &amp; Hospitality</h3>
+            <p>Keeping guests comfortable with reliable plumbing — from lobby restrooms to commercial kitchens.</p>
+          </div>
+          <div class="industry-card" data-animate>
+            <div class="industry-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Restaurants &amp; Food Service</h3>
+            <p>Grease trap cleaning, drain maintenance, and emergency response to keep your kitchen running.</p>
+          </div>
+          <div class="industry-card" data-animate>
+            <div class="industry-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Property Managers</h3>
+            <p>One trusted partner for all your properties. Priority scheduling, consolidated billing, compliance reports.</p>
+          </div>
+          <div class="industry-card" data-animate>
+            <div class="industry-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Commercial Properties</h3>
+            <p>Offices, retail, industrial — full-scope commercial plumbing services for any business type.</p>
+          </div>
+          <div class="industry-card" data-animate>
+            <div class="industry-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Residential</h3>
+            <p>Same commercial-grade expertise and care brought to your home's plumbing needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section section--warm" aria-label="Why choose us">
+      <div class="container why-us__grid">
+        <div class="why-us__content" data-animate>
+          <p class="section-eyebrow">What Makes Us Different</p>
+          <h2 class="section-title">We're the Trusted Plumbing Partner for Tampa's Commercial Properties</h2>
+          <p class="section-body">From routine maintenance to emergency repairs, we keep your business running smoothly. No hidden fees. No runaround. Just reliable service from licensed professionals who show up when they say they will.</p>
+          <a href="about.html" class="btn btn--primary">Meet Our Team</a>
+        </div>
+        <div class="why-us__list">
+          <div class="why-item" data-animate>
+            <div class="why-item__check" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="why-item__title">24/7 Emergency Availability</h3>
+              <p class="why-item__desc">We don't close. When a pipe bursts at 2am, we answer. Average response time under 60 minutes.</p>
+            </div>
+          </div>
+          <div class="why-item" data-animate>
+            <div class="why-item__check" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="why-item__title">Licensed &amp; Insured</h3>
+              <p class="why-item__desc">Fully licensed, meeting all local codes and industry standards. Protecting you and your property.</p>
+            </div>
+          </div>
+          <div class="why-item" data-animate>
+            <div class="why-item__check" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="why-item__title">Transparent Pricing</h3>
+              <p class="why-item__desc">Clear quotes upfront. No surprise charges. You know what you're paying before we start.</p>
+            </div>
+          </div>
+          <div class="why-item" data-animate>
+            <div class="why-item__check" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="why-item__title">Commercial Specialists</h3>
+              <p class="why-item__desc">We understand what's at stake for your business. Fast, minimal-disruption service is our standard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" aria-label="Call to action">
+      <div class="container cta-banner__inner" data-animate>
+        <div class="cta-banner__text">
+          <h2 class="cta-banner__headline">Plumbing Emergency?<br>We Answer 24/7.</h2>
+          <p class="cta-banner__sub">One call. Fast response. Professional resolution.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="tel:+18137349192" class="btn btn--accent btn--xl">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Call (813) 734-9192
+          </a>
+          <a href="contact.html" class="btn btn--outline-light btn--xl">Schedule Service</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" aria-label="Excellent Plumbing Services home">
+          <span class="logo-mark">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="16" fill="#C87941"/>
+              <path d="M10 22V14a6 6 0 0 1 12 0v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M13 22v-5a3 3 0 0 1 6 0v5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Excellent<strong>Plumbing</strong></span>
+        </a>
+        <p class="footer__tagline">Tampa's trusted commercial plumbing partner since 2017.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/excellentplumbingservices/" class="social-link" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/excellentplumbingserv" class="social-link" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="tel:+18137349192" class="social-link" aria-label="Call us on WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Quick Links</h3>
+        <nav aria-label="Footer navigation">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="property-managers.html" class="footer__link">Property Managers</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+          <a href="privacy.html" class="footer__link">Privacy Policy</a>
+        </nav>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__nav-title">Contact</h3>
+        <a href="tel:+18137349192" class="footer__contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (813) 734-9192
+        </a>
+        <a href="mailto:excellent@excellentplumbingservices.com" class="footer__contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          excellent@excellentplumbingservices.com
+        </a>
+        <div class="footer__hours">
+          <p><strong>Mon – Fri:</strong> 8:30 am – 5:00 pm</p>
+          <p><strong>Sat – Sun:</strong> Emergency Services Only</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 Excellent Plumbing Services. All rights reserved. Tampa, FL.</p>
+        <p>Licensed &amp; Insured Commercial Plumbing Contractor</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
